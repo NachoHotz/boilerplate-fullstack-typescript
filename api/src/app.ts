@@ -2,7 +2,7 @@ import express, { Application, Request, Response, NextFunction } from 'express';
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
 
-import routes from './routes/index.routes';
+import routes from './routes/index.route';
 import setHeaders from './middlewares/setHeaders';
 
 const app: Application = express();
