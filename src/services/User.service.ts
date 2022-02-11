@@ -1,7 +1,7 @@
 import User from '../db/schemas/User.schema';
 import users from '../../users.json';
 
-export const getUsers = async () => {
+export const getUsers = async (): Promise<any[] | undefined> => {
   try {
     return await User.find();
   } catch (e) {
@@ -9,7 +9,7 @@ export const getUsers = async () => {
   }
 };
 
-export const createUser = async () => {
+export const createUser = async (): Promise<void> => {
   try {
     const usersParsed = Array.from(users);
 
@@ -19,7 +19,7 @@ export const createUser = async () => {
   }
 };
 
-export const getUniqueUser = async (id: number) => {
+export const getUniqueUser = async (id: number): Promise<any> => {
   try {
     return await User.findOne({ id });
   } catch (e: any) {
