@@ -1,5 +1,5 @@
-import { useSelector } from "react-redux";
-import { State } from "../redux/store";
+import { useSelector } from 'react-redux';
+import { State } from '../redux/store';
 
 export default function Home() {
   const counter = useSelector((state: State) => state.counter);
@@ -8,5 +8,5 @@ export default function Home() {
     <div>
       <p>{counter}</p>
     </div>
-  )
+  );
 }
