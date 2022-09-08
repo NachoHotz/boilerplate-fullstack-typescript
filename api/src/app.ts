@@ -1,9 +1,9 @@
 import express, { Application } from 'express';
 import cors from 'cors';
-import corsOptions from './lib/corsOptions';
 import helmet from 'helmet';
 import cookieParser from 'cookie-parser';
 import errorMiddleware from './middlewares/error.middleware';
+import { corsOptions } from './config/';
 
 import routes from './routes/index.route';
 

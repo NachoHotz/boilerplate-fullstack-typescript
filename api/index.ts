@@ -1,5 +1,5 @@
 import app from './src/app';
-import envConfig from './src/lib/envConfig';
+import { envConfig } from './src/config';
 
 const { API_PORT } = envConfig;
 
