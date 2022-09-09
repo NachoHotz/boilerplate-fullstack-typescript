@@ -1,5 +1,4 @@
-import InitialState from './types';
-import { Action } from './types';
+import InitialState, { Action } from './types';
 import { ActionTypes } from '../actions/names';
 
 const initialState: InitialState = {
