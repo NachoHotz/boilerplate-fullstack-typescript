@@ -1,2 +1,1 @@
-const basicService = (): string => 'Hello World!';
-export default basicService;
+export const BasicService = (): string => 'Hello World!';

@@ -53,7 +53,7 @@ export const AppDataStore = new DataSource({
   database: DB_NAME,
   synchronize: NODE_ENV === 'development',
   logging: false,
-  entities: [__dirname + '/entities/*.js'],
+  entities: [__dirname + '/entities/*.entity.ts'],
 };*/
 
 // Folder name for the models = entities
