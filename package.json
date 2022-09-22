@@ -9,7 +9,7 @@
     "build:client": "cd client && yarn build",
     "start:all": "concurrently \"yarn start:client\" \"yarn start:server\"",
     "start:server": "cd api/ && yarn start",
-    "start:client": "cd client && yarn start",
+    "start:client": "cd client && yarn preview",
     "dev:all": "concurrently \"yarn dev:client\" \"yarn dev:server\"",
     "dev:server": "cd api/ && yarn dev",
     "dev:client": "cd client && yarn dev"
