@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "scripts": {
-    "install:all": "concurrently \"yarn install:client\" \"yarn install:server\"",
+    "install:all": "yarn && concurrently \"yarn install:client\" \"yarn install:server\"",
     "install:server": "cd api/ && yarn",
     "install:client": "cd client && yarn",
     "build:all": "concurrently \"yarn build:client\" \"yarn build:server\"",
