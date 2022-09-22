@@ -1,13 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 import thunk from 'redux-thunk';
-import rootReducer from './reducer';
+import reducer from './reducer/index';
 
 const store = configureStore({
-  reducer: rootReducer,
+  reducer,
   middleware: [thunk],
   devTools: process.env.NODE_ENV !== 'production',
 });
 
-export type State = ReturnType<typeof rootReducer>;
+export type RootState = ReturnType<typeof reducer>;
+export type AppDispatch = typeof store.dispatch;
+
 export default store;

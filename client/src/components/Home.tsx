@@ -1,12 +1,10 @@
-import { useSelector, useDispatch } from 'react-redux';
-import { decrement, increment, reset } from '../redux/actions/types';
-import { State } from '../redux/store';
+import { useAppDispatch, useAppSelector } from '../redux/hooks'
+import { increment, decrement, reset } from '../redux/reducer/index'
 import style from './Home.module.css';
 
 export default function Home() {
-  const dispatch = useDispatch();
-
-  const counter = useSelector((state: State) => state.counter);
+  const dispatch = useAppDispatch();
+  const counter = useAppSelector((state) => state.counter);
 
   const Increment = () => {
     dispatch(increment());
