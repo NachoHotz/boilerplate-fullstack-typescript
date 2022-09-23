@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-// TODO: Remove th DB envs you won´t use
+// IMPORTANT: Remove th DB envs you won´t use
 export const envConfig = {
   API_PORT: process.env.API_PORT as string,
   NODE_ENV: process.env.NODE_ENV as string,
