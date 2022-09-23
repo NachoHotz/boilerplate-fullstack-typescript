@@ -1,16 +1,16 @@
 {
   "license": "MIT",
   "scripts": {
-    "install:all": "yarn && concurrently \"yarn install:client\" \"yarn install:server\"",
+    "install:all": "clear && yarn && concurrently \"yarn install:client\" \"yarn install:server\"",
     "install:server": "cd api/ && yarn",
     "install:client": "cd client && yarn",
-    "build:all": "concurrently \"yarn build:client\" \"yarn build:server\"",
+    "build:all": "clear && concurrently \"yarn build:client\" \"yarn build:server\"",
     "build:server": "cd api/ && yarn build",
     "build:client": "cd client && yarn build",
-    "start:all": "concurrently \"yarn start:client\" \"yarn start:server\"",
+    "start:all": "clear && concurrently \"yarn start:client\" \"yarn start:server\"",
     "start:server": "cd api/ && yarn start",
     "start:client": "cd client && yarn preview",
-    "dev:all": "concurrently \"yarn dev:client\" \"yarn dev:server\"",
+    "dev:all": "clear && concurrently \"yarn dev:client\" \"yarn dev:server\"",
     "dev:server": "cd api/ && yarn dev",
     "dev:client": "cd client && yarn dev"
   },
