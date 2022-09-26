@@ -1,5 +1,5 @@
-import { useAppDispatch, useAppSelector } from '../redux/hooks'
-import { increment, decrement, reset } from '../redux/reducer/index'
+import { useAppDispatch, useAppSelector } from '../redux/hooks';
+import { increment, decrement, reset } from '../redux/reducer/index';
 import style from './Home.module.css';
 
 export default function Home() {
