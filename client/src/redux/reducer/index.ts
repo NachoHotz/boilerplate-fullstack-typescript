@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 import InitialState from './types';
 
 const initialState: InitialState = {
@@ -19,8 +19,8 @@ export const counterSlice = createSlice({
       state.counter = 0;
     }
   }
-})
+});
 
 export const { increment, decrement, reset } = counterSlice.actions;
 
-export default counterSlice.reducer
+export default counterSlice.reducer;
