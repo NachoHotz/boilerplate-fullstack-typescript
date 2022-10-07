@@ -5,7 +5,7 @@ import cookieParser from 'cookie-parser';
 import * as Sentry from '@sentry/node';
 import * as Tracing from '@sentry/tracing';
 import errorMiddleware from './middlewares/error.middleware';
-import { corsOptions, envConfig } from './config/';
+import { corsOptions, envConfig, NodeEnvs } from './config/';
 
 import mainRouter from './routes/index.routes';
 
@@ -31,7 +31,7 @@ app.use(cors(corsOptions));
 app.use(Sentry.Handlers.requestHandler());
 app.use(Sentry.Handlers.tracingHandler());
 
-if (NODE_ENV === 'development') {
+if (NODE_ENV === NodeEnvs.development) {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const morgan = require('morgan');
   app.use(morgan('dev'));
