@@ -26,7 +26,8 @@
     "helmet": "^5.0.2",
     "rimraf": "^3.0.2",
     "typescript": "*",
-    "winston": "^3.8.2"
+    "winston": "^3.8.2",
+    "zod": "^3.19.1"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.2",
